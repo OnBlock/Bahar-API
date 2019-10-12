@@ -1,5 +1,8 @@
 plugins {
     id 'java'
+    id 'maven'
+    id 'maven-publish'
+    id "com.jfrog.bintray" version "1.8.4"
 }
 
 group 'com.baharmc'
@@ -10,6 +13,7 @@ targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 configurations {
@@ -18,5 +22,33 @@ configurations {
 }
 
 dependencies {
+    compile 'org.jetbrains:annotations:17.0.0'
+}
 
+publishing {
+    publications {
+        BaharAPIPub(MavenPublication) {
+            from components.java
+            groupId 'com.baharmc'
+            artifactId 'BaharAPI'
+            version {project.version}
+        }
+    }
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ['BaharAPIPub']
+    pkg {
+        repo = 'maven'
+        name = 'Bahar-API'
+        userOrg = 'baharmc'
+        websiteUrl = 'baharmc.com'
+        desc = 'Plugin API of the Bahar servers'
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/BaharMC/Bahar-API.git'
+        githubRepo = 'https://github.com/BaharMC/Bahar-API'
+        publicDownloadNumbers = true
+    }
 }

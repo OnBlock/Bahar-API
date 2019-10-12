@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.baharmc'
-version '0.0.1-SNAPSHOT'
+version '0.0.1'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -25,13 +25,31 @@ dependencies {
     compile 'org.jetbrains:annotations:17.0.0'
 }
 
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allJava
+}
+
+task packageJavadoc(type: Jar) {
+    from javadoc
+    classifier = 'javadoc'
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    classpath = configurations.compileClasspath
+}
+
 publishing {
     publications {
         BaharAPIPub(MavenPublication) {
             from components.java
             groupId 'com.baharmc'
             artifactId 'BaharAPI'
-            version {project.version}
+            version version
+
+            artifact sourceJar
+            artifact packageJavadoc
         }
     }
 }

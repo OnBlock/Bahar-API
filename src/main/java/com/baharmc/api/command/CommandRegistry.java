@@ -4,22 +4,39 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+/**
+ * Registers the commands
+ */
 public interface CommandRegistry {
 
-    // TODO: 03/11/2019 javadoc
-    void registerCommand(@NotNull Command command);
+    /**
+     * Register command
+     *
+     * @param cmd {@link Command}
+     */
+    void register(@NotNull Command cmd);
 
-    // TODO: 03/11/2019 javadoc
-    void unregisterCommand(@NotNull Command command);
+    /**
+     * Unregister command
+     *
+     * @param cmd {@link Command}
+     */
+    void unregister(@NotNull Command cmd);
 
-    // TODO: 03/11/2019 javadoc
-    void unregisterCommand(@NotNull String commandLabel);
-
-    // TODO: 03/11/2019 javadoc
+    /**
+     * Gets the command
+     *
+     * @param commandLabel is command label of the commad
+     * @return {@link Command}
+     */
     @NotNull
     Command getCommand(@NotNull String commandLabel);
 
-    // TODO: 03/11/2019 javadoc
+    /**
+     * Gets all commands in the server
+     *
+     * @return {@link List<Command>}
+     */
     @NotNull
     List<Command> getCommands();
 

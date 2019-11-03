@@ -1,4 +1,4 @@
-package com.baharmc.api.command;
+package com.baharmc.api.command.sent;
 
 import org.jetbrains.annotations.NotNull;
 

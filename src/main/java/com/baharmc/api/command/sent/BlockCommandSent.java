@@ -1,4 +1,4 @@
-package com.baharmc.api.command;
+package com.baharmc.api.command.sent;
 
 import com.baharmc.api.world.Block;
 import org.jetbrains.annotations.NotNull;

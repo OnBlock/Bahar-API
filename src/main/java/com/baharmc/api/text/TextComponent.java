@@ -1,7 +1,5 @@
 package com.baharmc.api.text;
 
-import net.minecraft.text.LiteralText;
-
 public interface TextComponent {
 
     /**

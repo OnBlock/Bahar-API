@@ -32,6 +32,7 @@ public interface Server {
      *
      * @return version
      */
+    @NotNull
     String getVersion();
 
 }

@@ -1,7 +1,5 @@
 package com.baharmc.api;
 
-import net.minecraft.server.PlayerManager;
-import net.minecraft.server.network.ServerPlayerEntity;
 import org.jetbrains.annotations.NotNull;
 
 public interface Server {

@@ -1,4 +1,4 @@
 package com.baharmc.api.entity;
 
-public interface Player {
+public interface Player extends Entity {
 }

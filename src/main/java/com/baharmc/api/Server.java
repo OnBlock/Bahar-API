@@ -9,7 +9,7 @@ public interface Server {
      *
      * @param brandName - custom text to set
      */
-    void setDisplayBrandName(String brandName);
+    void setDisplayBrandName(@NotNull String brandName);
 
     /**
      * Gets the custom display brand

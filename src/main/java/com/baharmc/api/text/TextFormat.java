@@ -119,11 +119,11 @@ public enum TextFormat {
     private static final Map<Integer, TextFormat> BY_ID = Maps.newHashMap();
     private static final Map<Character, TextFormat> BY_CHAR = Maps.newHashMap();
 
-    private TextFormat(char code, int intCode, Formatting formatting) {
+    TextFormat(char code, int intCode, Formatting formatting) {
         this(code, intCode, formatting, false);
     }
 
-    private TextFormat(char code, int intCode, Formatting formatting, boolean isFormat) {
+    TextFormat(char code, int intCode, Formatting formatting, boolean isFormat) {
         this.code = code;
         this.intCode = intCode;
         this.isFormat = isFormat;

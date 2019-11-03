@@ -3,7 +3,7 @@ package com.baharmc.api.command;
 import com.baharmc.api.world.Block;
 import org.jetbrains.annotations.NotNull;
 
-public interface BlockCommandSended extends CommandSended {
+public interface BlockCommandSent extends CommandSent {
 
     /**
      * Returns the block this command sender belongs to

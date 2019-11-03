@@ -1,4 +1,4 @@
 package com.baharmc.api.command;
 
-public interface CommandSended {
+public interface CommandSent {
 }

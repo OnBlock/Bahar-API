@@ -49,9 +49,9 @@ public interface CommandSource {
     /**
      * Gets sender of the command
      *
-     * @return {@link CommandSended}
+     * @return {@link CommandSent}
      */
     @NotNull
-    CommandSended getCommandSender();
+    CommandSent getCommandSender();
 
 }

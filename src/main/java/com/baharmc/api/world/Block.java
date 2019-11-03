@@ -1,5 +1,6 @@
 package com.baharmc.api.world;
 
+import com.baharmc.api.math.Vec3d;
 import org.jetbrains.annotations.NotNull;
 
 /**

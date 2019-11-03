@@ -67,7 +67,7 @@ public final class Bahar {
         final PermissionService service = permissionServiceLoader.iterator().next();
 
         if (service == null) {
-            throw new RuntimeException("No permissions service found! Get a permission mod supporting Bahar!");
+            throw new RuntimeException("No permissions service found! Get a permission manager plugin for Bahar!");
         }
 
         return service;

@@ -1,5 +1,7 @@
 package com.baharmc.api;
 
+import com.baharmc.api.text.Texts;
+import com.baharmc.api.text.TextComponent;
 import org.jetbrains.annotations.NotNull;
 
 public interface Server {
@@ -38,5 +40,12 @@ public interface Server {
      */
     @NotNull
     String getVersion();
+
+    /**
+     * Gets the text maanger to parse {@link String} to {@link TextComponent}
+     * @return {@link Texts}
+     */
+    @NotNull
+    Texts getTextManager();
 
 }

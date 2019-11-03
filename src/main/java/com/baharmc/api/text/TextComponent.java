@@ -1,6 +1,6 @@
 package com.baharmc.api.text;
 
-public interface TextComponent {
+public interface TextComponent extends MessageComponent {
 
     /**
      * Translates the alternate color codes into the special character

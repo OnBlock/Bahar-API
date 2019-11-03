@@ -106,6 +106,7 @@ public enum TextFormat {
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
                 "a", "b", "c", "d", "e", "f", "i", "k", "l", "m", "o", "r"
         };
+
     }
 
     public static final char COLOR_CHAR = '\u00A7';

@@ -2,23 +2,7 @@ package com.baharmc.api.text;
 
 import net.minecraft.text.LiteralText;
 
-public interface SimpleText {
-
-    /**
-     * A Simple way of managing the Texts
-     *
-     * @param string - the String you want to make a text out of
-     * @return an instance of SimpleText
-     */
-    SimpleText of(String string);
-
-    /**
-     * Another Simple way of managing the Texts
-     *
-     * @param text - the LiteralText instance you want to make a text out of
-     * @return an instance of SimpleText
-     */
-    SimpleText of(LiteralText text);
+public interface TextComponent {
 
     /**
      * Translates the alternate color codes into the special character
@@ -55,4 +39,5 @@ public interface SimpleText {
      * @return translated raw string
      */
     String getWithoutFormattingCodes();
+
 }

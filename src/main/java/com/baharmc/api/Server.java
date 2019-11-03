@@ -6,6 +6,10 @@ public interface Server {
 
     /**
      * Sets the custom display brand
+     * @apiNote - This method won't change anything in the server
+     *            If you want to display this custom brand name
+     *            instead of the default one, you have to send a
+     *            custom payload (of type BRAND) to all the player
      *
      * @param brandName - custom text to set
      */

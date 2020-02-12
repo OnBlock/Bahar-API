@@ -42,7 +42,7 @@ public interface Server {
     String getVersion();
 
     /**
-     * Gets the text maanger to parse {@link String} to {@link TextComponent}
+     * Gets the text manager to parse {@link String} to {@link TextComponent}
      * @return {@link Texts}
      */
     @NotNull

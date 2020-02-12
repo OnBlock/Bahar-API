@@ -14,7 +14,7 @@ public interface World {
      * @param pos   The position
      * @param block The new block
      */
-    void setBlockAt(@NotNull Vec3d pos, @NotNull Blocks block);
+//    void setBlockAt(@NotNull Vec3d pos, @NotNull Blocks block);
 
     /**
      * Gets the block at pos

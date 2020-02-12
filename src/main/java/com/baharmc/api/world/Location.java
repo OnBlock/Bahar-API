@@ -25,6 +25,29 @@ public interface Location {
     double getZ();
 
     /**
+     * Gets the Yaw of this Location
+     *
+     * A yaw of 0 or 360 represents the positive z direction.
+     * A yaw of 180 represents the negative z direction.
+     * A yaw of 90 represents the negative x direction.
+     * A yaw of 270 represents the positive x direction.
+     *
+     * @return the rotation's yaw
+     */
+    float getYaw();
+
+    /**
+     * Gets the Pitch of this Location
+     *
+     * A pitch of 0 represents level forward facing.
+     * A pitch of 90 represents downward facing, or negative y direction.
+     * A pitch of -90 represents upward facing, or positive y direction.
+     *
+     * @return the rotation's pitch
+     */
+    float getPitch();
+
+    /**
      * Gets the Identifier of the Dimension this location exists in
      *
      * @return dimension identifier
@@ -96,5 +119,28 @@ public interface Location {
      * @param id Identifier of the dimension
      */
     void setDimension(Identifier id);
+
+    /**
+     * Sets the Yaw of this location
+     *
+     * A yaw of 0 or 360 represents the positive z direction.
+     * A yaw of 180 represents the negative z direction.
+     * A yaw of 90 represents the negative x direction.
+     * A yaw of 270 represents the positive x direction.
+     *
+     * @param yaw the new yaw
+     */
+    void setYaw(float yaw);
+
+    /**
+     * Sets the Pitch of this location
+     *
+     * A pitch of 0 represents level forward facing.
+     * A pitch of 90 represents downward facing, or negative y direction.
+     * A pitch of -90 represents upward facing, or positive y direction.
+     *
+     * @param pitch the new pitch
+     */
+    void setPitch(float pitch);
 
 }

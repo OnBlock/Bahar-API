@@ -1,7 +1,7 @@
 package com.baharmc.api.world;
 
+import com.baharmc.api.math.Vec3d;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.dimension.DimensionType;
 
@@ -80,7 +80,7 @@ public interface Location {
      *
      * @return a ChunkPos
      */
-    ChunkPos toChunkPos();
+    //ChunkPos toChunkPos();
 
     /**
      * Gets the Location as a {@link Vec3d}
@@ -94,7 +94,6 @@ public interface Location {
      *
      * @return a Vec3i
      */
-    Vec3i toVec3i();
 
     /**
      * Sets the Position of the Location at the X Axis

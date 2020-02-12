@@ -14,7 +14,7 @@ public interface Block {
      * @return the block's coordinates
      */
     @NotNull
-    Vec3d getLocation();
+    Location getLocation();
 
     /**
      * Gets the block's world

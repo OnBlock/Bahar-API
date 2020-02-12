@@ -1,6 +1,7 @@
 package com.baharmc.api.mock;
 
 import com.baharmc.api.Server;
+import com.baharmc.api.text.Texts;
 import org.jetbrains.annotations.NotNull;
 
 public final class MckServer implements Server {
@@ -22,5 +23,10 @@ public final class MckServer implements Server {
     @Override
     public String getVersion() {
         throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public @NotNull Texts getTextManager() {
+        return null;
     }
 }
